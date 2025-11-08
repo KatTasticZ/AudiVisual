@@ -1,0 +1,44 @@
+# Core Backend
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Audio Processing
+librosa==0.10.1
+soundfile==0.12.1
+pydub==0.25.1
+
+# Video Processing
+moviepy==1.0.3
+opencv-python==4.8.1.78
+imageio==2.33.0
+imageio-ffmpeg==0.4.9
+
+# Image Processing
+Pillow==10.1.0
+numpy==1.24.3
+scipy==1.11.4
+
+# AI/ML (Optional - for enhanced features)
+torch==2.1.0
+torchvision==0.16.0
+diffusers==0.23.1
+transformers==4.35.2
+
+# Database & Storage
+sqlalchemy==2.0.23
+aiosqlite==0.19.0
+redis==5.0.1
+
+# Utilities
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+aiofiles==23.2.1
+celery==5.3.4
+websockets==12.0
+
+# Monitoring
+prometheus-client==0.19.0

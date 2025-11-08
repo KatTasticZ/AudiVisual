@@ -1,0 +1,28 @@
+tasks:
+  - name: Backend
+    init: |
+      pip install -r requirements.txt
+    command: |
+      uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+  
+  - name: Frontend
+    init: |
+      cd frontend
+      npm install
+    command: |
+      cd frontend
+      npm run dev
+
+ports:
+  - port: 8000
+    onOpen: notify
+    visibility: public
+  - port: 3000
+    onOpen: open-preview
+    visibility: public
+
+vscode:
+  extensions:
+    - ms-python.python
+    - dbaeumer.vscode-eslint
+    - esbenp.prettier-vscode
